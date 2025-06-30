@@ -27,6 +27,18 @@
           }
         }
       }
+    },
+    "/api/Test/hello": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

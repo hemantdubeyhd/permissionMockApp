@@ -4,7 +4,7 @@ namespace PermissionApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TestController : Controller
+    public class TestController : ControllerBase
     {
         [HttpGet("hello")]
         public IActionResult GetHello()
