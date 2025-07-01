@@ -1,3 +1,4 @@
+<!--
 <script setup>
 import { ref } from 'vue'
 
@@ -40,4 +41,30 @@ const count = ref(0)
 .read-the-docs {
   color: #888;
 }
-</style>
+</style>-->
+
+<script setup>
+import {ref, onMounted} from 'vue';
+
+const message = ref('Loading...');
+
+onMounted(async() =>
+{
+  try
+  {
+    const res = await fetch('https://localhost:5001/api/test/hello');
+    const data = await res.json();
+    message.value = data.message;
+  }
+  catch(error)
+  {
+  message.value = 'Error fetching from backend';
+}
+});
+</script>
+
+<template>
+  <div>
+    <h1> {{ message }}</h1>
+  </div>
+</template>
