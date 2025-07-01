@@ -52,7 +52,7 @@ onMounted(async() =>
 {
   try
   {
-    const res = await fetch('https://localhost:5001/api/test/hello');
+    const res = await fetch('https://localhost:7047/api/test/hello');
     const data = await res.json();
     message.value = data.message;
   }
