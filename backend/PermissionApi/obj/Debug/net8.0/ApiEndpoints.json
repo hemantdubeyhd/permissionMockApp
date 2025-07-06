@@ -1,5 +1,51 @@
 [
   {
+    "ContainingType": "PermissionApi.Controllers.OfficeController",
+    "Method": "GetOffices",
+    "RelativePath": "api/Office",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PermissionApi.Models.Office, PermissionApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PermissionApi.Controllers.OfficeController",
+    "Method": "AddOffice",
+    "RelativePath": "api/Office",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "office",
+        "Type": "PermissionApi.Models.Office",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PermissionApi.Models.Office",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PermissionApi.Controllers.TestController",
     "Method": "GetHello",
     "RelativePath": "api/Test/hello",
@@ -11,7 +57,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__1",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__2",
     "RelativePath": "weatherforecast",
     "HttpMethod": "GET",
     "IsController": false,
