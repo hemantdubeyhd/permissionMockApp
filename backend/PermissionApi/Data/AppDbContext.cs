@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PermissionApi.Models;
+
+
 namespace PermissionApi.Data
 {
     public class AppDbContext: DbContext
